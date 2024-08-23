@@ -32,25 +32,26 @@ body {
     margin-bottom: 20px;
 }
 
-.play-button {
-    display: block;
-    margin: 50px auto;
-    padding: 15px 30px;
-    font-size: 1.5em;
-    background-color: #ffcc00;
-    color: black;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.play-button:hover {
-    background-color: #ffaa00;
-}
-
 @keyframes crawl {
     0% { bottom: -100%; }
     100% { bottom: 100%; }
+}
+
+/* Lightsaber Duel Section */
+.lightsaber-duel {
+    text-align: center;
+    color: white;
+    margin-top: 200px;
+}
+
+.lightsaber {
+    position: absolute;
+    width: 200px;
+    height: 10px;
+    background-color: #00ff00;
+    transform-origin: left center;
+    transition: transform 0.2s ease-out;
+    display: none;
 }
 
 /* Media queries for responsiveness */
@@ -67,11 +68,6 @@ body {
     .title {
         font-size: 1.2em;
     }
-
-    .play-button {
-        font-size: 1.2em;
-        padding: 10px 20px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -86,10 +82,5 @@ body {
 
     .title {
         font-size: 1em;
-    }
-
-    .play-button {
-        font-size: 1em;
-        padding: 8px 15px;
     }
 }
